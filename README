@@ -100,4 +100,60 @@ $ sudo apt install dmenu
 
 8. 编译和安装dwm、st
 
+9. 设置DWM启动方式
+
+方式一：使用display manager启动
+
+以ubuntu 20.04为例,ubuntu 20.04使用gdm3做为display manager，配置完成之后可以在登录界面选择dwm作为桌面启动
+
+具体配置方式，进入`/usr/share/xsessions/`目录，新建文`件dwm.desktop`,输入内容：
+
+```
+[Desktop Entry]
+Encoding=UTF-8
+Name=DWM
+Comment=Dynamic window manager
+Exec=dwm
+Icon=dwm
+Type=XSession
+```
+
+方式二：使用startx命令从文字界面启动
+
+此方式开机更加快速，使用更加灵活，系统资源占用更少。
+
+首先将系统改为默认进入文字界面
+
+修改grub配置,打开文件`/etc/default/grub`,将`GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"`的改为`GRUB_CMDLINE_LINUX_DEFAULT="text"`然后执行命令
+
+```
+$ sudo update-grub
+```
+
+将启动等级改为多用户等级，执行如下命令：
+
+
+```
+$ systemctl set-default multi-user.target 
+// 如果想改回启动图形界面执行下面
+$ systemctl set-default graphical.target
+```
+
+最后修改`~/.xsession`文件（如果没有就新建），在最后一行加入
+
+```
+exec dwm
+```
+
+重启电脑，执行`startx`命令，直接进入dwm，同时也可以执行`sudo systemctl start gdm.service`命令，打开gdm3的用户登录界面。
+
+
+> 注意事项：
+>
+> 1. DWM的MODKEY为Super键
+> 2. 启动google-chrome时如果无法加载密码，请使用`google-chrome --password-store=gnome`命令进行启动
+
+
+
+
 
