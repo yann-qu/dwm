@@ -46,3 +46,58 @@ Configuration
 -------------
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
+
+
+
+建议的安装步骤：
+-------------
+
+0. 下载源代码
+
+将st dwm dwm-scripts放置到~/Program目录下。(若目录不同请注意修改脚本和源代码中的路径)
+
+1. 安装基础依赖
+
+```
+$ sudo apt-get install suckless-tools libx11-dev libxft-dev libxinerama-dev gcc make
+```
+
+2. 为X11安装一个compositor
+
+```
+$ sudo apt install compton
+```
+
+3. 安装桌面背景图片设置工具
+
+```
+$ sudo apt install feh
+```
+
+4. 安装电源监控工具
+
+```
+$ sudo apt install acpi acpitool
+```
+
+5. 安装背光灯调整工具
+
+```
+$ sudo apt install light
+```
+
+6. 安装字体
+
+https://github.com/eosrei/twemoji-color-font 安装以修复st的emoji显示问题
+
+https://github.com/ryanoasis/nerd-fonts 需要安装FiraCode字体、Hack字体
+
+7. 安装dmenu
+
+```
+$ sudo apt install dmenu
+```
+
+8. 编译和安装dwm、st
+
+
