@@ -121,7 +121,7 @@ $ sudo apt install dmenu
 
 以ubuntu 20.04为例,ubuntu 20.04使用gdm3做为display manager，配置完成之后可以在登录界面选择dwm作为桌面启动
 
-具体配置方式，进入`/usr/share/xsessions/`目录，新建文`件dwm.desktop`,输入内容：
+具体配置方式，进入`/usr/share/xsessions/`目录，新建文件`dwm.desktop`,输入内容：
 
 ```
 [Desktop Entry]
