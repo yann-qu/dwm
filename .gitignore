@@ -1,4 +1,5 @@
 dwm
 *.o
 *.orig
+*.rej
 .vscode/
