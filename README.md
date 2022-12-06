@@ -8,6 +8,16 @@ dwm is an extremely fast, small, and dynamic window manager for X.
   - [Running dwm](#running-dwm)
   - [Configuration](#configuration)
   - [建议的安装步骤](#建议的安装步骤)
+    - [0. 下载源代码](#0-下载源代码)
+    - [1. 安装基础依赖](#1-安装基础依赖)
+    - [2. 为X11安装一个compositor](#2-为x11安装一个compositor)
+    - [3. 安装桌面背景图片设置工具](#3-安装桌面背景图片设置工具)
+    - [4. 安装电源监控工具](#4-安装电源监控工具)
+    - [5. 安装背光灯调整工具](#5-安装背光灯调整工具)
+    - [6. 安装字体](#6-安装字体)
+    - [7. 安装dmenu](#7-安装dmenu)
+    - [8. 编译和安装dwm st](#8-编译和安装dwm-st)
+    - [9. 设置DWM启动方式](#9-设置dwm启动方式)
   - [重要快捷键](#重要快捷键)
 
 
@@ -65,57 +75,63 @@ and (re)compiling the source code.
 
 ## 建议的安装步骤
 
-0. 下载源代码
+### 0. 下载源代码
 
 将st dwm dwm-scripts放置到~/Program目录下。(若目录不同请注意修改脚本和源代码中的路径)
 
-1. 安装基础依赖
+### 1. 安装基础依赖
 
 ```bash
 $ sudo apt-get install suckless-tools libx11-dev libxft-dev libxinerama-dev gcc make
 ```
 
-2. 为X11安装一个compositor
+### 2. 为X11安装一个compositor
 
 ```bash
 $ sudo apt install compton
 ```
 
-3. 安装桌面背景图片设置工具
+### 3. 安装桌面背景图片设置工具
 
 ```bash
 $ sudo apt install feh
 ```
 
-4. 安装电源监控工具
+### 4. 安装电源监控工具
 
 ```bash
 $ sudo apt install acpi acpitool
 ```
 
-5. 安装背光灯调整工具
+### 5. 安装背光灯调整工具
 
 ```bash
 $ sudo apt install light
 ```
 
-6. 安装字体
+### 6. 安装字体
 
 https://github.com/eosrei/twemoji-color-font 安装以修复st的emoji显示问题
 
-https://github.com/ryanoasis/nerd-fonts 需要安装FiraCode字体、Hack字体
+https://github.com/ryanoasis/nerd-fonts Install FiraCode and Hack series font.
+
+`sudo apt-get install fonts-symbola` Install Symbola font. Unicode support for st.
+
+`sudo apt-get install fonts-noto-cjk` Install Google Noto CJK font. Chinese support for st. **Attention**: This font should have been installed when config chinese input method for debian.
+
+(Optional) Install IPAGothic font, Japanese support for st.
 
 https://www.nerdfonts.com/cheat-sheet 可以找到一些字体icon
 
-7. 安装dmenu
+### 7. 安装dmenu
 
 ```bash
 $ sudo apt install dmenu
 ```
 
-8. 编译和安装dwm、st
+### 8. 编译和安装dwm st
 
-9. 设置DWM启动方式
+### 9. 设置DWM启动方式
 
 方式一：使用display manager启动
 

@@ -15,17 +15,24 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray        = 1;     /* 0 means no systray */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Hack Nerd Font Mono:size=12" };
-static const char dmenufont[]       = "Hack Nerd Font Mono:size=12";
+static const char *fonts[]          = { "FiraCode NFM:size=12" };
+static const char dmenufont[]       = "FiraCode NFM:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
+static const unsigned int baralpha = 0xa0;
+static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+};
+static const unsigned int alphas[][3]      = {
+	/*               fg      bg        border     */
+	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
 /* tagging */
