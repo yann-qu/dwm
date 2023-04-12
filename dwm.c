@@ -1662,7 +1662,7 @@ runautostart(void)
 	// free(pathpfx);
 	// free(path);
 
-	system("cd /home/yann/Software/dwm-scripts; ./autostart.sh;");
+	system("cd ~/Software/dwm/scripts; ./autostart.sh;");
 }
 
 void

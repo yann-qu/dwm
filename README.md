@@ -109,6 +109,13 @@ $ sudo apt install acpi acpitool
 $ sudo apt install light
 ```
 
+> 注意：  
+> 在执行light指令时可能需要root权限，这导致`scripts/light_up.sh`和`scripts/light_down.sh`无法正常执行。
+>
+> 解决方法：  
+> `$ sudo chmod +s /usr/bin/light`  
+> [参考链接](https://bbs.archlinux.org/viewtopic.php?id=254203)
+
 ### 6. 安装字体
 
 https://github.com/eosrei/twemoji-color-font 安装以修复st的emoji显示问题
@@ -205,9 +212,9 @@ exec dwm
 | `Windows + t` | change layout to tiled layout mode |
 | `Windows + f` | change layout to floating layout mode |
 | `Windows + m` | change layout to monocle layout mode |
-
-
-
-
-
+| `Windows + F1` | vol toggle |
+| `Windows + F2` | vol down |
+| `Windows + F3` | vol up |
+| `Windows + F11` | light down |
+| `Windows + F12` | light up |
 
