@@ -1,4 +1,4 @@
 #!/bin/bash
 
-~/Software/Clash.for.Windows-0.20.20-x64-linux/cfw
+~/Software/cfw-0.20.21-x64-linux/cfw
 

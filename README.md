@@ -116,6 +116,14 @@ $ sudo apt install light
 > `$ sudo chmod +s /usr/bin/light`  
 > [参考链接](https://bbs.archlinux.org/viewtopic.php?id=254203)
 
+### 6. 安装媒体控制器
+
+```bash
+$ sudo apt install playerctl
+```
+
+Playerctl is a command-line utility and library for controlling media players that implement the MPRIS D-Bus Interface Specification.
+
 ### 6. 安装字体
 
 https://github.com/eosrei/twemoji-color-font 安装以修复st的emoji显示问题

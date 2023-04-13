@@ -3,6 +3,9 @@
 # 启动Clash for Windows
 exec /bin/bash ./start_cfw.sh &
 
+# 启动输入法
+exec fcitx5 &
+
 # 启动dwm状态显示脚本
 exec /bin/bash ./dwm_status.sh &
 

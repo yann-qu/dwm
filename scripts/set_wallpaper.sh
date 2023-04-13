@@ -1,4 +1,4 @@
 #!/bin/bash
 
-feh --bg-scale ./img/2560x1440.png
+feh --bg-fill ./img/2560x1440.png
 
