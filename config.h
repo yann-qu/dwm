@@ -97,7 +97,7 @@ static const char *volupcmd[]  = { "/home/yann/Software/dwm/scripts/vol_up.sh", 
 static const char *lightdowncmd[]  = { "/home/yann/Software/dwm/scripts/light_down.sh", NULL };
 static const char *lightupcmd[]  = { "/home/yann/Software/dwm/scripts/light_up.sh", NULL };
 static const char scratchpadname[] = "scratchpad";
-static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
+static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "80x24", NULL };
 static const char *prtscrcmd[] = { "flameshot", "gui", NULL }; /* use flameshot to capture screenshot, need to install flameshot first */
 
 static Key keys[] = {

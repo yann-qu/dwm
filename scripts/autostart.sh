@@ -10,7 +10,7 @@ exec fcitx5 &
 exec /bin/bash ./dwm_status.sh &
 
 # 启动picom
-exec picom --config ~/.config/picom.conf &
+exec picom --config ~/.config/picom/picom.conf &
 
 # set wallpaper
 exec /bin/bash ./set_wallpaper.sh &
